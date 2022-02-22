@@ -35,38 +35,6 @@ DADATA_SECRET="adccd63ac28701442e26b7eef57eb5eb0a72143e"
 DADATA_TIMEOUT=10
 ```
 
-## Методы
-
-- **Работа с адресами**
-  - [Стандартизация адреса](https://github.com/movemoveapp/laravel-dadata#%D1%81%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%B0%D0%B4%D1%80%D0%B5%D1%81%D0%B0)
-  - [Подсказки по адресам](https://github.com/movemoveapp/laravel-dadata#%D0%BF%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B7%D0%BA%D0%B8-%D0%BF%D0%BE-%D0%B0%D0%B4%D1%80%D0%B5%D1%81%D0%B0%D0%BC)
-  - [Определение адреса по координатам](https://github.com/movemoveapp/laravel-dadata#%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B0%D0%B4%D1%80%D0%B5%D1%81%D0%B0-%D0%BF%D0%BE-%D0%BA%D0%BE%D0%BE%D1%80%D0%B4%D0%B8%D0%BD%D0%B0%D1%82%D0%B0%D0%BC)
-  - [Определение адреса по IP](https://github.com/movemoveapp/laravel-dadata#%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B0%D0%B4%D1%80%D0%B5%D1%81%D0%B0-%D0%BF%D0%BE-ip)
-  - [Определение адреса по КЛАДР или ФИАС коду](https://github.com/movemoveapp/laravel-dadata#%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B0%D0%B4%D1%80%D0%B5%D1%81%D0%B0-%D0%BF%D0%BE-%D0%BA%D0%BB%D0%B0%D0%B4%D1%80-%D0%B8%D0%BB%D0%B8-%D1%84%D0%B8%D0%B0%D1%81-%D0%BA%D0%BE%D0%B4%D1%83)
-  - [Определение ближайшего отделения Почты России по адресу](https://github.com/movemoveapp/laravel-dadata#%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B1%D0%BB%D0%B8%D0%B6%D0%B0%D0%B9%D1%88%D0%B5%D0%B3%D0%BE-%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BF%D0%BE%D1%87%D1%82%D1%8B-%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B8-%D0%BF%D0%BE-%D0%B0%D0%B4%D1%80%D0%B5%D1%81%D1%83)
-  - [Определение отделения Почты России почтовому индексу](https://github.com/movemoveapp/laravel-dadata#%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BF%D0%BE%D1%87%D1%82%D1%8B-%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B8-%D0%BF%D0%BE-%D0%BF%D0%BE%D1%87%D1%82%D0%BE%D0%B2%D0%BE%D0%BC%D1%83-%D0%B8%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D1%83)
-  - [Определение отделения Почты России по координатам](https://github.com/movemoveapp/laravel-dadata#%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BF%D0%BE%D1%87%D1%82%D1%8B-%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B8-%D0%BF%D0%BE-%D0%BA%D0%BE%D0%BE%D1%80%D0%B4%D0%B8%D0%BD%D0%B0%D1%82%D0%B0%D0%BC)
-  - [Определение идентификатора города в СДЭК, Boxberry и DPD](https://github.com/movemoveapp/laravel-dadata#%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D0%B0-%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0-%D0%B2-%D1%81%D0%B4%D1%8D%D0%BA-boxberry-%D0%B8-dpd)
-  - [Адрес в ФИАС по идентификатору](https://github.com/movemoveapp/laravel-dadata#%D0%B0%D0%B4%D1%80%D0%B5%D1%81-%D0%B2-%D1%84%D0%B8%D0%B0%D1%81-%D0%BF%D0%BE-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%83)
-- **Работа с именами**
-  - [ФИО](https://github.com/movemoveapp/laravel-dadata#%D1%84%D0%B8%D0%BE)
-  - [Автодополнение при вводе («подсказки»)](https://github.com/movemoveapp/laravel-dadata#%D0%B0%D0%B2%D1%82%D0%BE%D0%B4%D0%BE%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%B8-%D0%B2%D0%B2%D0%BE%D0%B4%D0%B5-%D0%BF%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B7%D0%BA%D0%B8)
-- **Работа с электорнными (email) адресами**
-  - [Email](https://github.com/movemoveapp/laravel-dadata#email)
-  - [Подсказки по email](https://github.com/movemoveapp/laravel-dadata#%D0%BF%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B7%D0%BE%D0%BA%D0%B8-%D0%BF%D0%BE-email)
-- **Работа с телефонными номерами**
-  - [Проверить телефон](https://github.com/movemoveapp/laravel-dadata#%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%B8%D1%82%D1%8C-%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD)
-- **Работа с компаниями**
-  - [Организация по ИНН](https://github.com/movemoveapp/laravel-dadata#%D0%BE%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%BF%D0%BE-%D0%B8%D0%BD%D0%BD)
-  - [Автодополнение при вводе («подсказки»)](https://github.com/movemoveapp/laravel-dadata#%D0%B0%D0%B2%D1%82%D0%BE%D0%B4%D0%BE%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%B8-%D0%B2%D0%B2%D0%BE%D0%B4%D0%B5-%D0%BF%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B7%D0%BA%D0%B8-1)
-  - [Поиск аффилированных компаний](https://github.com/movemoveapp/laravel-dadata#%D0%BF%D0%BE%D0%B8%D1%81%D0%BA-%D0%B0%D1%84%D1%84%D0%B8%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B9)
-- **Работа с банками**
-  - [Банк по БИК, SWIFT, ИНН или регистрационному номеру](https://github.com/movemoveapp/laravel-dadata#%D0%B1%D0%B0%D0%BD%D0%BA-%D0%BF%D0%BE-%D0%B1%D0%B8%D0%BA-swift-%D0%B8%D0%BD%D0%BD-%D0%B8%D0%BB%D0%B8-%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%BE%D0%BC%D1%83-%D0%BD%D0%BE%D0%BC%D0%B5%D1%80%D1%83)
-  - [API подсказок по банкам](https://github.com/movemoveapp/laravel-dadata#api-%D0%BF%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B7%D0%BE%D0%BA-%D0%BF%D0%BE-%D0%B1%D0%B0%D0%BD%D0%BA%D0%B0%D0%BC)
-- **Работа с паспортами**
-  - [Проверка по реестру МВД](https://github.com/movemoveapp/laravel-dadata#%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D0%BF%D0%BE-%D1%80%D0%B5%D0%B5%D1%81%D1%82%D1%80%D1%83-%D0%BC%D0%B2%D0%B4)
-  - [Кем выдан паспорт](https://github.com/movemoveapp/laravel-dadata#%D0%BA%D0%B5%D0%BC-%D0%B2%D1%8B%D0%B4%D0%B0%D0%BD-%D0%BF%D0%B0%D1%81%D0%BF%D0%BE%D1%80%D1%82)  
-
 
 
 ## Работа с адресами
