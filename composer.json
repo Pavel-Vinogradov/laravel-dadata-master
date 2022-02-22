@@ -1,0 +1,66 @@
+{
+    "name": "teleport-kirov/laravel-dadata",
+    "description": "Laravel  DaData.RU",
+    "keywords": [
+        "dadata",
+        "laravel",
+        "sdk",
+        "address",
+        "email",
+        "passport",
+        "bank",
+        "name",
+        "patronymic",
+        "surname"
+    ],
+    "type": "laravel-package",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Pavel Vinogradov",
+            "email": "vin0007@mail.ru",
+            "homepage": "https://www.teleport.run/",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Teleport\\DaData\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Teleport\\DaData\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.4.0"
+      },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "prefer-stable": true,
+    "extra": {
+        "laravel":{
+            "providers": [
+                "Teleport\\DaData\\DaDataServiceProvider"
+            ],
+            "aliases": {
+                "DaDataAddress": "Teleport\\DaData\\Facades\\DaDataAddress",
+                "DaDataName": "Teleport\\DaData\\Facades\\DaDataName",
+                "DaDataEmail": "Teleport\\DaData\\Facades\\DaDataEmail",
+                "DaDataPhone": "Teleport\\DaData\\Facades\\DaDataPhone",
+                "DaDataCompany": "Teleport\\DaData\\Facades\\DaDataCompany",
+                "DaDataBank": "Teleport\\DaData\\Facades\\DaDataBank",
+                "DaDataPassport": "Teleport\\DaData\\Facades\\DaDataPassport"
+            }
+        }
+    }
+}
+
