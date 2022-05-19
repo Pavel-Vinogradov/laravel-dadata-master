@@ -16,7 +16,7 @@ class SuggestDaDataProvider
     /**
      * @var string
      */
-    protected string $api  = 'https://suggestions.dadata.ru/suggestions/api';
+    protected string $api  = 'http://suggestions.dadata.ru/suggestions/api';
 
     /**
      * @var string
